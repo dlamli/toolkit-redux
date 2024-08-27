@@ -1,9 +1,10 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { JSON_API_URL } from "../../../services/api";
 
 export const todosApi = createApi({
     reducerPath: "todos",
     baseQuery: fetchBaseQuery({
-        baseUrl: "https://jsonplaceholder.typicode.com",
+        baseUrl: JSON_API_URL,
     }),
     endpoints: (builder) => ({
         getTodos: builder.query({

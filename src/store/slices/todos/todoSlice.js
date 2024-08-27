@@ -6,7 +6,7 @@ export const todoSlice = createSlice({
     },
     reducers: {
         increment: (state /* action */) => {
-            state.counter += 1;
+            state.todos += 1;
         },
     },
 });
